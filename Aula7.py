@@ -29,6 +29,6 @@ lab.pack(pady=10)
 entry = ctk.CTkLabel(janela, width=200)
 entry.pack()
 
-ctk.CTkButton(janela, text=enviar, width=200, command=enviar).pack(pady=10)
+ctk.CTkButton(janela, text="Enviar", width=200, command=enviar).pack(pady=10)
 
 janela.mainloop()

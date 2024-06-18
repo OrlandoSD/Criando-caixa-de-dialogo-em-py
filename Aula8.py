@@ -1,4 +1,5 @@
 import customtkinter as ctk  # importando biblioteca
+ 
 
 
 janela = ctk.CTk()  # Criando a janela
@@ -12,17 +13,12 @@ ctk.CTkLabel(janela, text="Cursor de Customtkinter - Aula 06 (label)",
 ctk.CTkLabel(janela, text="Digite seu Nome Completo:").pack()
 
 
-
-# text_var = ctk.StringVar(value=input("Digite seu nome"))
-text_var = ctk.StringVar(value="ola mundo!! este texto é dimanamico")
-
 lab = ctk.CTkLabel(janela,
-                   text=" ",
                    width=200, height=25,
                    text_color="red",
                    font=("arial bold", 16))
 lab.pack(pady=10)
 
-
+entry = ctk.CTkEntry(janela, width=200)
 
 janela.mainloop()
